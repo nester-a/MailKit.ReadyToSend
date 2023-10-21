@@ -4,6 +4,12 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Aleksey Nesterov</Authors>
+    <Description>Prepared to work emailer. Just add options for ClientFactory ans start use main MailKitEmailSender immediately.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/nester-a/MailKit.ReadyToSend</RepositoryUrl>
+    <PackageTags>Mail; MailKit; Email; Smtp</PackageTags>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
