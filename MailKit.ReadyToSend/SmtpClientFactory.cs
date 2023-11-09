@@ -29,6 +29,9 @@ namespace MailKit.ReadyToSend
             cancellation.ThrowIfCancellationRequested();
 
             var client = new SmtpClient();
+
+            client.ServerCertificateValidationCallback = (s,c,h,e) => true; 
+            
             await client.ConnectAsync(options.Host, options.Port, options.UseSsl, cancellation);
 
             if (options.Username != null && options.Password != null)
